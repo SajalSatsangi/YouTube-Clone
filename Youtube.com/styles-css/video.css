@@ -1,0 +1,91 @@
+.thumbnail {
+    width: 100%;
+    border-radius: 18px;
+    margin-bottom: 15px;
+}
+
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+    width: 36px;
+    border-radius: 50px;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-author,
+.video-stats {
+    font-size: 12px;
+    color: rgb(170, 170, 170);
+}
+
+.video-author {
+    margin-bottom: 6px;
+}
+
+.verified-tick {
+    color: black;
+    background-color: rgb(170, 170, 170);
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 10px;
+    border-radius: 8px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 5px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1000px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-time {
+    font-family: Roboto, Arial;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 22px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    border-color: black;
+    right: 8px;
+}
